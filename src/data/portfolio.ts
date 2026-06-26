@@ -155,7 +155,7 @@ export const devProjects: Project[] = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     url: 'https://github.com/DionesxD/Pokedex',
     icon: '⚪',
-    images: ['/projetos/],
+    images: [],
   },
   {
     id: '6',
