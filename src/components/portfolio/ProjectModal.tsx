@@ -136,7 +136,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-medium text-[#b97aff] hover:text-[#b97aff]/80 transition-colors"
               >
-                Acessar Projeto {'->'}
+                Acessar Projeto &rarr;
               </a>
             </div>
           )}
