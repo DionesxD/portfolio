@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Project } from '@/types/portfolio';
 import {
@@ -77,15 +76,11 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               <div className="relative">
                 {/* Main Image */}
                 <div className="rounded-lg overflow-hidden border border-[#1e1630] relative">
-                  <motion.img
+                  <img
                     key={current}
                     src={images[current]}
                     alt={`${project.title} screenshot ${current + 1}`}
-                    className="w-full h-auto object-cover"
-                    initial={{ opacity: 0, x: 40 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -40 }}
-                    transition={{ duration: 0.25 }}
+                    className="w-full h-auto object-cover transition-opacity duration-300"
                     loading="lazy"
                   />
                 </div>
