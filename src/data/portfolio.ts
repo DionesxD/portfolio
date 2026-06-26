@@ -110,7 +110,7 @@ export const devProjects: Project[] = [
     tags: ['HTML', 'CSS', 'Frontend'],
     url: 'https://github.com/DionesxD/Projeto_ResumoPedido',
     icon: '🛒',
-    images: ['/images/dev/instalador.png'],
+    images: ['/projetos/dev-002-ordersummary.png'],
   },
   {
     id: '3',
@@ -121,7 +121,9 @@ export const devProjects: Project[] = [
     tags: ['Pascal', 'API', 'Consulta'],
     url: 'https://github.com/DionesxD/Sistema-de-Consulta-CEP',
     icon: '📍',
-    images: ['/images/dev/instalador.png'],
+    images: ['/projetos/dev-003-consultacep.png',
+              '/projetos/dev-003-consultacep2.png',
+    ],
   },
   {
     id: '4',
@@ -132,7 +134,17 @@ export const devProjects: Project[] = [
     tags: ['Delphi', 'Pascal', 'Desktop'],
     url: 'https://github.com/DionesxD/SISTEMA_FINANCEIRO',
     icon: '💰',
-    images: ['/images/dev/instalador.png'],
+    images: ['/projetos/dev-004-sistemafinanceiro.png',
+            '/projetos/dev-004-sistemafinanceiro2.png',
+            '/projetos/dev-004-sistemafinanceiro3.png',
+            '/projetos/dev-004-sistemafinanceiro4.png',
+            '/projetos/dev-004-sistemafinanceiro5.png',
+            '/projetos/dev-004-sistemafinanceiro6.png',
+            '/projetos/dev-004-sistemafinanceiro7.png',
+            '/projetos/dev-004-sistemafinanceiro8.png',
+            '/projetos/dev-004-sistemafinanceiro9.png',
+            '/projetos/dev-004-sistemafinanceiro10.png',
+            ],
   },
   {
     id: '5',
@@ -143,7 +155,7 @@ export const devProjects: Project[] = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     url: 'https://github.com/DionesxD/Pokedex',
     icon: '⚪',
-    images: ['/images/dev/instalador.png'],
+    images: ['/projetos/],
   },
   {
     id: '6',
@@ -154,7 +166,7 @@ export const devProjects: Project[] = [
     tags: ['Java', 'OOP', 'CRUD'],
     url: 'https://github.com/DionesxD/GestaodeAlunos_Java',
     icon: '🎓',
-    images: ['/images/dev/instalador.png'],
+    images: ['/projetos/dev-006-gestaoalunosjava.png'],
   },
 ];
 
