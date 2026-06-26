@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
 import type { Project } from '@/types/portfolio';
 import {
   Dialog,
@@ -139,7 +140,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 Acessar Projeto &rarr;
               </a>
             </div>
-          )}
+          ){'}'}
         </DialogContent>
       </Dialog>
     </AnimatePresence>
