@@ -95,6 +95,11 @@ export const devProjects: Project[] = [
     tags: ['PowerShell', 'Windows', 'Automação'],
     url: 'https://github.com/DionesxD/InstaladorProgramasEssenciais',
     icon: '⚡',
+    images: ['/images/dev/instaladorautonomo.png',
+            '/images/dev/instaladorautonomo2.png',
+            '/images/dev/instaladorautonomo3.png',
+            '/images/dev/instaladorautonomo4.png',
+    ],
   },
   {
     id: '2',
@@ -105,6 +110,7 @@ export const devProjects: Project[] = [
     tags: ['HTML', 'CSS', 'Frontend'],
     url: 'https://github.com/DionesxD/Projeto_ResumoPedido',
     icon: '🛒',
+    images: ['/images/dev/instalador.png'],
   },
   {
     id: '3',
@@ -115,6 +121,7 @@ export const devProjects: Project[] = [
     tags: ['Pascal', 'API', 'Consulta'],
     url: 'https://github.com/DionesxD/Sistema-de-Consulta-CEP',
     icon: '📍',
+    images: ['/images/dev/instalador.png'],
   },
   {
     id: '4',
@@ -125,6 +132,7 @@ export const devProjects: Project[] = [
     tags: ['Delphi', 'Pascal', 'Desktop'],
     url: 'https://github.com/DionesxD/SISTEMA_FINANCEIRO',
     icon: '💰',
+    images: ['/images/dev/instalador.png'],
   },
   {
     id: '5',
@@ -135,6 +143,7 @@ export const devProjects: Project[] = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     url: 'https://github.com/DionesxD/Pokedex',
     icon: '⚪',
+    images: ['/images/dev/instalador.png'],
   },
   {
     id: '6',
@@ -145,6 +154,7 @@ export const devProjects: Project[] = [
     tags: ['Java', 'OOP', 'CRUD'],
     url: 'https://github.com/DionesxD/GestaodeAlunos_Java',
     icon: '🎓',
+    images: ['/images/dev/instalador.png'],
   },
 ];
 

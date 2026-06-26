@@ -226,7 +226,7 @@ Este projeto é de uso pessoal. Sinta-se livre para usar como inspiração ou te
 ---
 
 <p align="center">
-  Feito com 💜 por <strong>Johnny Alejandro</strong><br>
+  Feito por <strong>Johnny Alejandro</strong><br>
   <a href="https://github.com/DionesxD">GitHub</a> ·
   <a href="https://linkedin.com/in/johnnyalejandro">LinkedIn</a>
 </p>
