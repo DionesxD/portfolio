@@ -32,7 +32,7 @@ export const navItems: NavItem[] = [
 
 // ─── Stats ────────────────────────────────────────────────────
 export const stats: Stat[] = [
-  { value: '6+', label: 'Anos de Experiência', numericValue: 6, suffix: '+' },
+  { value: '7+', label: 'de Experiência', numericValue: 7, suffix: '+' },
   { value: '10', label: 'Certificações', numericValue: 10 },
   { value: 'SOC', label: 'Foco em Cyber Ops' },
   { value: 'RJ', label: 'Rio de Janeiro' },

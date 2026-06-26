@@ -17,7 +17,7 @@
 
 ## Sobre
 
-Portfolio de **Johnny Alejandro (DionesxD)** — profissional de TI com 6+ anos de experiência focado em **SOC & Cyber Operations**, infraestrutura de redes e desenvolvimento.
+Portfolio de **Johnny Alejandro (DionesxD)** — profissional de TI com 7+ anos de experiência focado em **SOC & Cyber Operations**, infraestrutura de redes e desenvolvimento.
 
 A experiência principal é um **terminal interativo** no estilo Kali Linux, onde o visitante digita comandos para revelar as seções do portfólio uma a uma. Para usuários não-técnicos, existe o botão **"Modo Visual"** que revela tudo de uma vez.
 

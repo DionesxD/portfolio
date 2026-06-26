@@ -70,7 +70,7 @@ export default function About() {
               custom={2}
               className="text-sm text-[#8b7fa0] leading-relaxed mt-6 max-w-xl"
             >
-              Profissional com mais de 6 anos de experiência em infraestrutura de
+              Profissional com mais de 7 anos de experiência em infraestrutura de
               TI, suporte especializado N2/N3 e operações de segurança cibernética.
               Atuação prática em monitoramento SOC, hardening de servidores,
               automação com PowerShell/Python e administração de ambientes corporativos.
