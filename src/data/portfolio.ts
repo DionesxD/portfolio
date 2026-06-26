@@ -322,7 +322,7 @@ export const certifications: Certification[] = [
 // ─── Languages ────────────────────────────────────────────────
 export const languages: Language[] = [
   { name: 'Português', level: 'Nativo', flag: '🇧🇷' },
-  { name: 'Inglês', level: 'Intermediário Alto — Fluência para leitura técnica, docs e logs', flag: '🇺🇸' },
+  { name: 'Inglês', level: 'Intermediário Alto', flag: '🇺🇸' },
   { name: 'Espanhol', level: 'Básico', flag: '🇪🇸' },
 ];
 

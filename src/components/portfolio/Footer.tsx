@@ -11,7 +11,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Johnny Alejandro. Todos os direitos reservados.
         </p>
         <p className="text-xs text-[#6b5f80]/40">
-          Feito com 💜 e Next.js
+          xD
         </p>
       </div>
     </footer>

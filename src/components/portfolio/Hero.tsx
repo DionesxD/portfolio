@@ -860,6 +860,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' as const }}
               className="flex h-[55vh] min-h-[360px] max-h-[560px] flex-col overflow-hidden rounded-xl border border-[#1e1630] bg-[#080510]/95 shadow-2xl shadow-[#b97aff]/[0.03] backdrop-blur-sm sm:h-[60vh] md:min-h-[440px] md:max-h-[580px]"
+              onWheel={(e) => e.stopPropagation()}
             >
               {/* Title bar */}
               <div className="flex items-center gap-2 border-b border-[#1e1630] bg-[#0c0918] px-4 py-2.5 shrink-0">

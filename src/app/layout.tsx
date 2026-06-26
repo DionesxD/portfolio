@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Johnny Alejandro — SOC & Cyber Operations",
   description:
-    "Portfolio profissional de Johnny Alejandro. 6+ anos de experiência em SOC, Cyber Operations, Infraestrutura e Desenvolvimento.",
+    "Portfolio profissional de Johnny Alejandro. 7+ anos de experiência em TI, Cyber Operations, Infraestrutura e Desenvolvimento.",
   keywords: [
     "portfolio",
     "cybersecurity",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Johnny Alejandro — SOC & Cyber Operations",
     description:
-      "Portfolio profissional. 6+ anos em SOC, Cyber Operations, Infraestrutura e Dev.",
+      "Portfolio profissional. 7+ anos em SOC, Cyber Operations, Infraestrutura e Dev.",
     type: "website",
   },
   twitter: {
