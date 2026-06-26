@@ -1,7 +1,8 @@
 'use client';
 
-import { AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Project } from '@/types/portfolio';
 import {
   Dialog,
@@ -18,6 +19,11 @@ interface ProjectModalProps {
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const hasImages = project.images && project.images.length > 0;
   const showLink = project.url && project.url !== '#';
+  const [current, setCurrent] = useState(0);
+  const images = project.images ?? [];
+
+  const prev = () => setCurrent((i) => (i - 1 + images.length) % images.length);
+  const next = () => setCurrent((i) => (i + 1) % images.length);
 
   return (
     <AnimatePresence>
@@ -26,6 +32,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <DialogContent
           showCloseButton={false}
           className="max-w-4xl w-full max-h-[85vh] overflow-y-auto bg-[#110d1a] border border-[#1e1630] rounded-lg p-6 md:p-8 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+          onWheel={(e) => e.stopPropagation()}
         >
           {/* Close Button */}
           <button
@@ -61,26 +68,62 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             ))}
           </div>
 
-          {/* Images Section */}
+          {/* Images Carousel */}
           <div className="mt-8">
             <span className="font-mono text-xs uppercase tracking-widest text-[#6b5f80] block mb-4">
               Capturas de Tela
             </span>
             {hasImages ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {project.images!.map((img, i) => (
-                  <div
-                    key={i}
-                    className="rounded-lg overflow-hidden border border-[#1e1630]"
-                  >
-                    <img
-                      src={img}
-                      alt={`${project.title} screenshot ${i + 1}`}
-                      className="w-full h-auto object-cover"
-                      loading="lazy"
-                    />
+              <div className="relative">
+                {/* Main Image */}
+                <div className="rounded-lg overflow-hidden border border-[#1e1630] relative">
+                  <motion.img
+                    key={current}
+                    src={images[current]}
+                    alt={`${project.title} screenshot ${current + 1}`}
+                    className="w-full h-auto object-cover"
+                    initial={{ opacity: 0, x: 40 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -40 }}
+                    transition={{ duration: 0.25 }}
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Prev / Next — só aparece se tiver mais de 1 imagem */}
+                {images.length > 1 && (
+                  <>
+                    <button
+                      onClick={prev}
+                      className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-[#110d1a]/80 border border-[#1e1630] text-[#8b7fa0] hover:text-white hover:border-[#b97aff]/40 transition-colors"
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                    </button>
+                    <button
+                      onClick={next}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full bg-[#110d1a]/80 border border-[#1e1630] text-[#8b7fa0] hover:text-white hover:border-[#b97aff]/40 transition-colors"
+                    >
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  </>
+                )}
+
+                {/* Dots */}
+                {images.length > 1 && (
+                  <div className="flex justify-center gap-1.5 mt-3">
+                    {images.map((_, i) => (
+                      <button
+                        key={i}
+                        onClick={() => setCurrent(i)}
+                        className={`h-1.5 rounded-full transition-all duration-300 ${
+                          i === current
+                            ? 'w-4 bg-[#b97aff]'
+                            : 'w-1.5 bg-[#1e1630]'
+                        }`}
+                      />
+                    ))}
                   </div>
-                ))}
+                )}
               </div>
             ) : (
               <p className="text-sm text-[#6b5f80]/60">
@@ -92,7 +135,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Link Button */}
           {showLink && (
             <div className="mt-8 pt-6 border-t border-[#1e1630]">
-              <a
+              
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
