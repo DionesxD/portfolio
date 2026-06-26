@@ -943,11 +943,13 @@ export default function Hero() {
             {/* Photo + Name — compact row on mobile */}
             <div className="flex items-center gap-4 lg:flex-col lg:items-center lg:gap-4">
               <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl border-2 border-[#b97aff]/30 bg-gradient-to-br from-[#1e1630] to-[#110d1a] shadow-lg shadow-[#b97aff]/[0.08] lg:h-32 lg:w-32">
-                <div className="flex h-full w-full items-center justify-center">
-                  <User className="h-10 w-10 text-[#6b5f80]/40 lg:h-16 lg:w-16" />
-                </div>
-                <div className="absolute inset-0 animate-scanline bg-gradient-to-b from-transparent via-[#b97aff]/[0.03] to-transparent" />
-              </div>
+            <img
+              src="/foto.jpg"
+              alt="Johnny Alejandro"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 animate-scanline bg-gradient-to-b from-transparent via-[#b97aff]/[0.03] to-transparent" />
+            </div>
 
               {/* Name & Title */}
               <div className="min-w-0 lg:text-center">
